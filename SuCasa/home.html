@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Su Casa</title>
+    <link rel="stylesheet" type="text/css" href="css/virtual-select.min.css"> 
+    <link rel="stylesheet" type="text/css" href="css/home.css"> 
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+<!--Navigation bar----------------------------------------------------------->
+  <div class="container">
+    <div class="navbar">
+      <div class="sucasa">
+        <img src="images/logo.png" class="logo">
+        <p>Su Casa</p>
+      </div>
+      <nav>
+          <ul>
+            <li><a href="">LOG IN</a></li>
+          </ul>
+      </nav>
+    </div>
+
+  <div class="background">
+
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col">
+  </div>
+
+<!--Search bar----------------------------------------------------------->
+  <div id="Slogan">
+    <h1>Find your safe space.</h1>
+    <p>Affordable rent. Verified listings. No agent fees.</p>
+  </div>
+
+  <div>
+    <select id="Location" multiple name="Location" placeholder="Location" data-search="true" data-silent-initial-value-set="true">
+      <option value="North">North</option>
+      <option value="East">East</option>
+      <option value="South">South</option>
+      <option value="West">West</option>
+    </select>
+   </div>
+   <script type="text/javascript" src="js/virtual-select.min.js"></script>
+    <script type="text/javascript">
+          VirtualSelect.init({ 
+        ele: '#Location' 
+      });
+    </script>
+
+  <div>
+      <select id="Pax" multiple name="Pax" placeholder="Pax" data-search="false" data-silent-initial-value-set="true">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="More">More</option>
+      </select>
+     </div>
+     <script type="text/javascript" src="js/virtual-select.min.js"></script>
+    <script type="text/javascript">
+          VirtualSelect.init({ 
+        ele: '#Pax' 
+      });
+    </script>
+
+  <div>
+    <select id="PropertyType" multiple name="Property Type" placeholder="Property Type" data-search="false" data-silent-initial-value-set="true">
+      <option value="Common room">Common room</option>
+      <option value="Master room">Master room</option>
+      <option value="Whole unit">Whole unit</option>
+      <option value="Studio">Studio apartmment</option>
+      <option value="HDB">HDB</option>
+      <option value="Condo">Condo</option>
+      <option value="Landed">Landed property</option>
+    </select>
+  </div>
+  <script type="text/javascript" src="js/virtual-select.min.js"></script>
+  <script type="text/javascript">
+        VirtualSelect.init({ 
+      ele: '#PropertyType'
+    });
+  </script>
+
+  <div>
+    <select id="Budget" multiple name="Budget" placeholder="Budget" data-search="false" data-silent-initial-value-set="true">
+      <option value="Common room">Common room</option>
+      <option value="Master roo">Master room</option>
+      <option value="Whole unit">Whole unit</option>
+      <option value="Studio">Studio apartmment</option>
+      <option value="HDB">HDB</option>
+      <option value="Condo">Condo</option>
+      <option value="Landed property">Landed property</option>
+    </select>
+  </div>
+  <script type="text/javascript" src="js/virtual-select.min.js"></script>
+  <script type="text/javascript">
+        VirtualSelect.init({ 
+      ele: '#Budget'
+    });
+  </script>
+
+  <div>
+    <select id="Requirements" multiple name="Requirements" placeholder="Requirements" data-search="true" data-silent-initial-value-set="true">
+      <option value="No landlord">No landlord</option>
+      <option value="Visitors allowed">Visitors allowed</option>
+      <option value="Free kitchen">Free kitchen use</option>
+      <option value="Light cooking">Light cooking</option>
+      <option value="Hired cleaners">Hired cleaners</option>
+      <option value="Pet-friendly">Pet-friendly</option>
+      <option value="LGBTQ-friendly">LGBTQ-friendly</option>
+      <option value="Smoker-friendly">Smoker-friendly</option>
+    </select>
+  </div>
+  <script type="text/javascript" src="js/virtual-select.min.js"></script>
+  <script type="text/javascript">
+        VirtualSelect.init({ 
+      ele: '#Requirements'
+    });
+  </script>
+
+  <div id="Search">
+    <button type="button">Search</button>
+  </div>
+  </div>
+
+<!--Featured listings----------------------------------------------------------->
+  <div class="slide">
+    <div class="slide-container">
+      <div class="card-wrapper swiper-wrapper">
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <img src="images/listing1.png" alt="">
+          </div>
+          <div class="profile-details">
+            <h3 class="price">$800</h3>
+            <h4 class="location">Bukit Panjang</h4>
+          </div>
+
+        <!--<div class="card swiper-slide">
+          <div class="image-box">
+            <img src="images/listing2.png" alt="">
+          </div>
+          <div class="profile-details">
+            <h3 class="price">$750</h3>
+            <h4 class="location">Pasir Ris</h4>
+          </div>
+        </div>-->
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Add Arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+
+      <!--Landlord register-----------------------------------------------------------
+      <div class="listing">
+        <div class="landlord">
+          <b>
+          <h3>Are you a landlord?</h3>
+          <button type="button">Register your listing here!</button>
+
+        <div class="bottom-left">
+          <p>$900</p>
+          <p>Marine Parade</p>
+        </div>
+      </div>
+      </div>
+
+
+      <div class="listing">
+        <img src="images/listing1.png">
+        <div class="bottom-left">
+          <p>$800</p>
+          <p>Bukit Panjang</p>
+        </div>
+      </div>
+
+      <div class="listing">
+        <img src="images/listing2.png">
+        <div class="bottom-left">
+          <p>$750</p>
+          <p>Pasir Ris</p>
+        </div>
+      </div>
+
+      <div class="listing">
+        <img src="images/listing3.png">
+        <div class="bottom-left">
+          <p>$820</p>
+          <p>Punggol</p>
+        </div>
+      </div>
+
+      <div class="listing">
+        <img src="images/listing4.png">
+        <div class="bottom-left">
+          <p>$900</p>
+          <p>Bukit Batok</p>
+        </div>
+      </div>
+
+      <div class="listing">
+        <img src="images/listing5.png">
+        <div class="bottom-left">
+          <p>$900</p>
+          <p>Marine Parade</p>
+        </div>
+      </div>
+
+            
+          </div>
+    </div>-->
+  </div>
+  </div>
+
+
+</body>
+</html>
+ 
